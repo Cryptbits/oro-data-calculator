@@ -631,22 +631,22 @@ const STEPS=[
     {logo:"oura",name:"Sleep Tracker (Oura, Whoop, or similar)",sub:"Sleep quality and recovery data is highly valuable for health AI and pharmaceutical research applications",val:32},
     {logo:"none",name:"None of the above",sub:"No health tracking data being collected",val:0,excl:true},
    ],note:"Health AI training data can fetch up to 40 times more than general browsing data from pharmaceutical and medical research companies."},
-  {tag:"🛒 Shopping Behavior",q:"How do you primarily shop online?",
+  {tag:"🛒 Shopping Behavior",q:"Which platforms do you shop on?",
    hint:"Purchase intent data is the gold standard for e-commerce AI. Your buying patterns shape recommendations and pricing algorithms for millions of shoppers.",
-   type:"radio",opts:[
+   type:"multi",opts:[
     {logo:"amazon",name:"Amazon (frequent buyer or Prime member)",sub:"Amazon advertising revenue reached $56.2B in 2024. Prime member behavioral data represents premium AI training value",val:80},
     {logo:"gshopping",name:"Google Shopping and major retailers",sub:"Google Shopping behavioral data feeds into Alphabet's AI advertising systems. $265B total ad revenue in 2024",val:55},
     {logo:"shopify",name:"Shopify, Etsy, or independent platforms",sub:"Cross platform purchase patterns provide diverse consumer behavioral signals for e-commerce AI training",val:30},
     {logo:"walmart",name:"Walmart or Target (online and in store)",sub:"Omnichannel behavioral data connecting online browsing to in-store purchases is highly valuable for retail AI",val:25},
-    {logo:"none",name:"I rarely shop online",sub:"Minimal online shopping behavioral signals being collected by platforms",val:5},
+    {logo:"none",name:"I rarely shop online",sub:"Minimal online shopping behavioral signals being collected by platforms",val:5,excl:true},
    ],note:"Amazon earns an estimated $80 to $180 per Prime user annually from purchase intent data alone. That value has never been shared with the people who created it."},
-  {tag:"📍 Location and Movement",q:"How is your device location being tracked?",
+  {tag:"📍 Location and Movement",q:"Which location services do you have active?",
    hint:"Location history builds a detailed picture of your daily life — where you live, work, worship, socialise, and travel.",
-   type:"radio",opts:[
+   type:"multi",opts:[
     {logo:"gmaps",name:"Google Maps with location history on",sub:"Alphabet's location services span 1B+ users and underpin its most profitable ad targeting products in 2024",val:48},
     {logo:"appl_maps",name:"Apple Maps and iOS location services",sub:"Apple Location Services collects significant movement data across its global device and services ecosystem",val:38},
     {logo:"uber",name:"Uber or Lyft (frequent rider)",sub:"Uber advertising revenue reached $8.4B in 2024. Ride and movement behavioral data is a growing revenue category",val:35},
-    {logo:"none",name:"Location mostly turned off",sub:"Limited location signal is being collected and monetized by platforms currently",val:8},
+    {logo:"none",name:"Location mostly turned off",sub:"Limited location signal is being collected and monetized by platforms currently",val:8,excl:true},
    ],note:"Location is one of the highest value data categories. Alphabet's location ad targeting revenue per user is among the highest across its entire product suite."},
   {tag:"💳 Finance and Payments",q:"Which financial apps or services do you actively use?",
    hint:"Financial behavioral data is the crown jewel of private data. It predicts spending with extraordinary accuracy and is the fastest growing AI training category.",
